@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GLOSS — детейлинг-студия в Минске</title>
+<meta name="description" content="Полировка, керамика, защитная плёнка и химчистка салона в Минске. Бесплатный осмотр, фотоотчёт по каждому этапу.">
+<meta name="theme-color" content="#07090B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400&family=Wix+Madefor+Text:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="nav__logo rise" href="#top" aria-label="GLOSS, на главную">GLOSS<span>detailing</span></a>
+  <nav class="nav__links rise" aria-label="Разделы">
+    <a href="#services">Услуги</a>
+    <a href="#calc">Калькулятор</a>
+    <a href="#results">До/после</a>
+    <a href="#process">Как работаем</a>
+    <a href="#faq">Вопросы</a>
+  </nav>
+  <div class="nav__right rise">
+    <a class="nav__phone" href="tel:+375291234567">+375 29 123-45-67</a>
+    <a class="btn btn--ghost btn--sm" href="#booking"><span class="btn__fill"></span><span class="btn__label">Записаться</span></a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO: схема A — фото на весь экран, текст снизу слева -->
+<section class="hero" aria-label="Главный экран">
+  <div class="hero__media">
+    <img src="assets/photo/hero.jpg" alt="Спорткар в тёмном боксе, свет скользит по капоту" fetchpriority="high">
+  </div>
+  <div class="hero__content">
+    <div class="hero__text">
+      <h1 class="hero__title rise">Вернём машине<br><em>заводской блеск</em></h1>
+      <p class="hero__lead rise">Полировка, керамика, плёнка и&nbsp;химчистка в&nbsp;Минске. Работаем в&nbsp;тёплом боксе и&nbsp;присылаем фотоотчёт по&nbsp;каждому этапу.</p>
+      <div class="hero__cta rise">
+        <a class="btn btn--solid" href="#booking"><span class="btn__fill"></span><span class="btn__label">Записаться на&nbsp;осмотр</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost" href="#calc"><span class="btn__fill"></span><span class="btn__label">Рассчитать стоимость</span></a>
+      </div>
+      <p class="hero__note rise">Осмотр бесплатно, перезвоним за&nbsp;15&nbsp;минут</p>
+    </div>
+    <dl class="hero__stats rise">
+      <div><dt>1&nbsp;200+</dt><dd>машин после нас</dd></div>
+      <div><dt>3&nbsp;года</dt><dd>гарантии на&nbsp;керамику</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- УСЛУГИ -->
+<section class="services" id="services">
+  <div class="services__head">
+    <h2 class="h2 rise">Шесть работ,<br>после которых<br><em>видно разницу</em></h2>
+    <p class="services__lead rise">Каждую машину сначала осматриваем под&nbsp;светом и&nbsp;замеряем толщину лака. Только потом говорим, что ей&nbsp;действительно нужно, а&nbsp;что&nbsp;нет.</p>
+  </div>
+  <div class="services__grid">
+    <article class="svc svc--tall rise">
+      <div class="svc__img"><img src="assets/photo/svc-polish.jpg" alt="Мастер полирует чёрный кузов" loading="lazy"></div>
+      <h3 class="svc__title">Полировка</h3>
+      <p class="svc__meta"><span>Убираем царапины и&nbsp;голограммы</span><b>от&nbsp;12&nbsp;000&nbsp;₽</b></p>
+    </article>
+    <article class="svc svc--wide rise">
+      <div class="svc__img"><img src="assets/photo/svc-ceramic.jpg" alt="Капли воды на кузове после керамики" loading="lazy"></div>
+      <h3 class="svc__title">Керамика</h3>
+      <p class="svc__meta"><span>Защита лака до&nbsp;3&nbsp;лет</span><b>от&nbsp;25&nbsp;000&nbsp;₽</b></p>
+    </article>
+    <article class="svc svc--mid rise">
+      <div class="svc__img"><img src="assets/photo/svc-ppf.jpg" alt="Чёрный Porsche 911 в защитной плёнке" loading="lazy"></div>
+      <h3 class="svc__title">Плёнка PPF</h3>
+      <p class="svc__meta"><span>Антигравий на&nbsp;зоны риска</span><b>от&nbsp;45&nbsp;000&nbsp;₽</b></p>
+    </article>
+    <article class="svc svc--tall rise">
+      <div class="svc__img"><img src="assets/photo/svc-interior.jpg" alt="Чистый кожаный салон" loading="lazy"></div>
+      <h3 class="svc__title">Химчистка салона</h3>
+      <p class="svc__meta"><span>Кожа, ткань, потолок</span><b>от&nbsp;7&nbsp;000&nbsp;₽</b></p>
+    </article>
+    <article class="svc svc--mid rise">
+      <div class="svc__img"><img src="assets/photo/svc-lights.jpg" alt="Фара после полировки" loading="lazy"></div>
+      <h3 class="svc__title">Фары</h3>
+      <p class="svc__meta"><span>Полировка и&nbsp;бронь плёнкой</span><b>от&nbsp;2&nbsp;500&nbsp;₽</b></p>
+    </article>
+    <article class="svc svc--wide rise">
+      <div class="svc__img"><img src="assets/photo/svc-wash.jpg" alt="Пена на спорткаре во время мойки" loading="lazy"></div>
+      <h3 class="svc__title">Детейлинг-мойка</h3>
+      <p class="svc__meta"><span>Двухфазная, с&nbsp;сушкой</span><b>от&nbsp;2&nbsp;000&nbsp;₽</b></p>
+    </article>
+  </div>
+</section>
+
+<!-- КАЛЬКУЛЯТОР -->
+<section class="calc" id="calc">
+  <div class="calc__box">
+    <div class="calc__top">
+      <h2 class="calc__title rise"><span class="calc__mark">Посчитайте</span> уход<br>за&nbsp;своей машиной</h2>
+      <p class="calc__intro rise">Выберите класс машины и&nbsp;услуги. Это ориентир: точную цену назовём после бесплатного осмотра, и&nbsp;она не&nbsp;вырастет по&nbsp;ходу работы.</p>
+    </div>
+    <form class="calc__body" id="calcForm" aria-label="Калькулятор стоимости">
+      <div class="calc__inputs">
+        <fieldset class="calc__group">
+          <legend>Класс машины</legend>
+          <div class="seg">
+            <label><input type="radio" name="cls" value="1" checked><span>Седан, хэтчбек</span></label>
+            <label><input type="radio" name="cls" value="1.25"><span>Кроссовер</span></label>
+            <label><input type="radio" name="cls" value="1.45"><span>Внедорожник, минивэн</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="calc__group">
+          <legend>Что сделать</legend>
+          <div class="checks">
+            <label><input type="checkbox" name="svc" value="polish" checked><span>Полировка кузова</span></label>
+            <label><input type="checkbox" name="svc" value="ceramic"><span>Керамика</span></label>
+            <label><input type="checkbox" name="svc" value="ppf"><span>Плёнка на&nbsp;зоны риска</span></label>
+            <label><input type="checkbox" name="svc" value="interior"><span>Химчистка салона</span></label>
+            <label><input type="checkbox" name="svc" value="lights"><span>Фары</span></label>
+            <label><input type="checkbox" name="svc" value="wash" checked><span>Детейлинг-мойка</span></label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="calc__result" aria-live="polite">
+        <h3 class="calc__rtitle">Ваш расчёт</h3>
+        <ul class="calc__lines" id="calcLines"></ul>
+        <div class="calc__total">
+          <div><span>Итого примерно</span><b id="calcSum">0&nbsp;₽</b></div>
+          <div><span>Срок</span><b id="calcDays">1&nbsp;день</b></div>
+        </div>
+      </div>
+    </form>
+    <div class="calc__bar">
+      <p>Сохраним расчёт и&nbsp;пришлём в&nbsp;Telegram вместе со&nbsp;свободными датами</p>
+      <a class="btn btn--solid" href="#booking" id="calcCta"><span class="btn__fill"></span><span class="btn__label">Забрать расчёт</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ДО / ПОСЛЕ — главная интерактивная фишка -->
+<section class="results" id="results">
+  <div class="results__head">
+    <h2 class="h2 rise">Потяните шторку<br><em>и&nbsp;сравните сами</em></h2>
+    <div class="tabs rise" role="tablist" aria-label="Выбор машины">
+      <button role="tab" aria-selected="true" data-car="gclass">Mercedes G&nbsp;63</button>
+      <button role="tab" aria-selected="false" data-car="camry">Toyota Camry</button>
+      <button role="tab" aria-selected="false" data-car="kia">Kia K5</button>
+    </div>
+  </div>
+  <div class="ba rise" id="ba">
+    <img class="ba__img ba__after" src="assets/photo/ba-gclass-after.jpg" alt="После: чистый блестящий кузов" draggable="false">
+    <div class="ba__before"><img class="ba__img" src="assets/photo/ba-gclass-before.jpg" alt="До: кузов в пыли и грязи" draggable="false"></div>
+    <span class="ba__tag ba__tag--l">до</span>
+    <span class="ba__tag ba__tag--r">после</span>
+    <div class="ba__handle" role="slider" tabindex="0" aria-label="Положение шторки" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+      <span class="ba__knob"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+    </div>
+  </div>
+  <p class="results__caption" id="baCaption">Mercedes G&nbsp;63: двухэтапная полировка и&nbsp;керамика в&nbsp;2&nbsp;слоя. 3&nbsp;дня в&nbsp;боксе</p>
+</section>
+
+<!-- ПРОЦЕСС -->
+<section class="process" id="process">
+  <h2 class="h2 process__title rise">Как проходит<br><em>работа с&nbsp;машиной</em></h2>
+  <ol class="steps">
+    <li class="step rise"><span class="step__n">01</span><h3>Приём и&nbsp;мойка</h3><p>Отмываем кузов от&nbsp;дорожной грязи, чтобы увидеть реальное состояние лака, а&nbsp;не&nbsp;слой пыли.</p></li>
+    <li class="step rise"><span class="step__n">02</span><h3>Осмотр под&nbsp;светом</h3><p>Смотрим кузов под&nbsp;детейлинг-лампами, замеряем толщину лака и&nbsp;фотографируем все дефекты.</p></li>
+    <li class="step rise"><span class="step__n">03</span><h3>Работа в&nbsp;боксе</h3><p>Делаем только согласованное. Если по&nbsp;ходу найдём что-то новое, сначала напишем вам с&nbsp;фото.</p></li>
+    <li class="step rise"><span class="step__n">04</span><h3>Контроль качества</h3><p>Второй мастер проверяет каждую панель. Отдаём машину только тогда, когда не&nbsp;к&nbsp;чему придраться.</p></li>
+    <li class="step rise"><span class="step__n">05</span><h3>Выдача и&nbsp;памятка</h3><p>Показываем результат при&nbsp;дневном свете и&nbsp;даём памятку, как мыть машину, чтобы покрытие жило дольше.</p></li>
+  </ol>
+</section>
+
+<!-- ПОЧЕМУ МЫ -->
+<section class="why">
+  <h2 class="h2 why__title rise">За&nbsp;что нас<br><em>рекомендуют</em></h2>
+  <ul class="why__list">
+    <li class="rise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg><h3>Гарантия в&nbsp;договоре</h3><p>На&nbsp;керамику до&nbsp;3&nbsp;лет, на&nbsp;плёнку до&nbsp;5. Всё прописано на&nbsp;бумаге.</p></li>
+    <li class="rise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-7h6v7"/></svg><h3>Тёплый закрытый бокс</h3><p>Работаем круглый год, без&nbsp;пыли и&nbsp;сквозняков.</p></li>
+    <li class="rise"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><h3>Фотоотчёт по&nbsp;этапам</h3><p>Видите, что происходит с&nbsp;машиной, даже не&nbsp;приезжая.</p></li>
+    <li class="rise"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="5"/></svg><h3>Проверенная химия</h3><p>Составы, которые не&nbsp;вредят лаку и&nbsp;пластику. Названия скажем заранее.</p></li>
+  </ul>
+</section>
+
+<!-- ЗАПИСЬ -->
+<section class="booking" id="booking">
+  <img class="booking__bg" src="assets/photo/form-bg.jpg" alt="" loading="lazy">
+  <div class="booking__panel">
+    <h2 class="h2 booking__title rise">Запишитесь<br><em>на&nbsp;бесплатный осмотр</em></h2>
+    <p class="booking__lead rise">Оставьте контакты, и&nbsp;мы перезвоним в&nbsp;течение 15&nbsp;минут в&nbsp;рабочее время. Подберём удобный день и&nbsp;заранее назовём цену.</p>
+    <form class="form rise" id="bookingForm" novalidate>
+      <label class="field"><span>Имя</span><input name="name" autocomplete="name" required></label>
+      <label class="field"><span>Телефон</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+375" required></label>
+      <label class="field"><span>Марка и&nbsp;модель</span><input name="car" placeholder="Например, Toyota Camry"></label>
+      <label class="field"><span>Комментарий</span><textarea name="comment" rows="3" id="bookingComment"></textarea></label>
+      <label class="agree"><input type="checkbox" name="agree" required><span>Согласен на&nbsp;обработку персональных данных</span></label>
+      <div class="form__actions">
+        <button class="btn btn--solid" type="submit"><span class="btn__fill"></span><span class="btn__label">Записаться на&nbsp;осмотр</span><svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <a class="btn btn--ghost" href="https://t.me/" target="_blank" rel="noopener"><span class="btn__fill"></span><span class="btn__label">Написать в&nbsp;Telegram</span></a>
+      </div>
+      <p class="form__status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <h2 class="h2 faq__title rise">Частые <em>вопросы</em></h2>
+  <div class="faq__list">
+    <details class="rise"><summary>Сколько времени занимает полировка?<i></i></summary><p>Лёгкая полировка занимает 1&nbsp;день, двухэтапная с&nbsp;глубокими царапинами 2–3&nbsp;дня. Точный срок назовём после осмотра.</p></details>
+    <details class="rise"><summary>Чем керамика отличается от&nbsp;воска?<i></i></summary><p>Воск держится 1–2&nbsp;месяца и&nbsp;смывается. Керамика образует твёрдый слой, который служит до&nbsp;3&nbsp;лет и&nbsp;защищает лак от&nbsp;реагентов и&nbsp;мелких царапин.</p></details>
+    <details class="rise"><summary>Можно ли оставить машину и&nbsp;уехать?<i></i></summary><p>Да. Машина стоит в&nbsp;закрытом боксе под&nbsp;видеонаблюдением, а&nbsp;фотоотчёт мы пришлём в&nbsp;Telegram.</p></details>
+    <details class="rise"><summary>Нужна ли предоплата?<i></i></summary><p>На&nbsp;полировку, химчистку и&nbsp;мойку нет. На&nbsp;плёнку и&nbsp;керамику берём небольшой задаток, чтобы заказать материал под&nbsp;вашу машину.</p></details>
+    <details class="rise"><summary>Что, если результат не&nbsp;понравится?<i></i></summary><p>Принимаете машину вместе с&nbsp;мастером при&nbsp;свете. Если что-то не&nbsp;так, доделываем бесплатно, в&nbsp;тот же день.</p></details>
+    <details class="rise"><summary>Как мыть машину после керамики?<i></i></summary><p>Первые 2&nbsp;недели не&nbsp;мыть. Дальше только двухфазная ручная мойка без&nbsp;щёток. Подробную памятку отдаём при&nbsp;выдаче.</p></details>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__brand">
+    <a class="nav__logo" href="#top">GLOSS<span>detailing</span></a>
+    <p>Детейлинг-студия в&nbsp;Минске</p>
+  </div>
+  <div class="footer__col">
+    <h3>Контакты</h3>
+    <a href="tel:+375291234567">+375 29 123-45-67</a>
+    <p>Минск, Партизанский район</p>
+    <p>Ежедневно 9:00–21:00</p>
+  </div>
+  <div class="footer__col">
+    <h3>Разделы</h3>
+    <a href="#services">Услуги</a>
+    <a href="#calc">Калькулятор</a>
+    <a href="#results">До/после</a>
+    <a href="#faq">Вопросы</a>
+  </div>
+  <p class="footer__demo">Демо-проект для&nbsp;портфолио: студия, цены и&nbsp;контакты вымышлены. Фото: Unsplash.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
