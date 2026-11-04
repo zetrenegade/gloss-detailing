@@ -88,13 +88,19 @@ let calcSummary = '';
       ? `Расчёт с сайта: ${clsLabel()}; ${picked.map(s => s.name.toLowerCase()).join(', ')}. Примерно ${fmt(sum)} ₽, ${days} ${dayWord(days)}.`
       : '';
   }
-  form.addEventListener('change', render);
+  // «Забрать расчёт» открывает Telegram-бота с этим расчётом: t.me/<бот>?start=calc_<класс>_<коды услуг>
+  const BOT = 'https://t.me/gloss_detailing_bot';
+  const CLS_CODE = { '1': '1', '1.25': '2', '1.45': '3' };
+  const SVC_CODE = { polish: 'p', ceramic: 'c', ppf: 'f', interior: 'i', lights: 'l', wash: 'w' };
+  const cta = document.getElementById('calcCta');
+  const syncCta = () => {
+    const cls = CLS_CODE[form.querySelector('input[name="cls"]:checked').value];
+    const svc = [...form.querySelectorAll('input[name="svc"]:checked')].map(i => SVC_CODE[i.value]).join('');
+    cta.href = svc ? `${BOT}?start=calc_${cls}_${svc}` : BOT;
+  };
+  form.addEventListener('change', () => { render(); syncCta(); });
   render();
-
-  document.getElementById('calcCta').addEventListener('click', () => {
-    const c = document.getElementById('bookingComment');
-    if (calcSummary && !c.value.includes('Расчёт с сайта')) c.value = calcSummary;
-  });
+  syncCta();
 })();
 
 /* ---------- до/после ---------- */
